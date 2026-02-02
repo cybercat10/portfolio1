@@ -380,7 +380,7 @@ nav .fas{
 }
 
 
-@media (hover:none),(max-width:600px){
+@media (hover:none),(max-width:768px){
     .hero-img,
     .hero-img:hover{
         transform:none !important;
@@ -414,6 +414,14 @@ nav .fas{
     .hero-left h1{
         font-size:30px;
     }
+    .hero-img {
+    opacity: 1 !important;
+    display: block !important;
+    visibility: visible !important;
+    position: relative !important;
+    z-index: 10 !important;
+    }
+
     nav.fas{
        display:block;
        font-size: 25px;
@@ -467,6 +475,7 @@ nav .fas{
         display:block;
 
     }
+
 
 
 
