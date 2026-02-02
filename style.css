@@ -11,38 +11,41 @@ body{
     background: #21002c;
     color: #fff;
 }
-/* HERO LAYOUT */
-.hero{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 100vh;
-  padding: 0 8%;
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 10%;
 }
 
-/* LEFT CONTENT */
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    width: 380px;
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+}
 .hero-left{
   flex: 1;
   color: white;
 }
-
-/* RIGHT IMAGE CONTAINER */
-.hero-right{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* IMAGE — SIZE IS NOT TOUCHED */
 .hero-img{
   animation: slideIn 1.5s ease-out forwards,
              float 3s ease-in-out infinite;
   animation-delay: 0s, 1.5s; /* float starts after slide */
 }
 
-/* SLIDE FROM RIGHT */
+
 @keyframes slideIn{
   from{
     transform: translateX(120%);
@@ -54,7 +57,7 @@ body{
   }
 }
 
-/* FLOATING EFFECT */
+
 @keyframes float{
   0%{
     transform: translateY(0);
@@ -464,6 +467,7 @@ nav .fas{
         display:block;
 
     }
+
 
 
 
